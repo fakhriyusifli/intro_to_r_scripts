@@ -34,3 +34,27 @@ vec2 <- 11:15
 cbind(vec1, vec2) #binding vectors according to cols to create matrice
 rbind(vec1, vec2) #binding vectors according to rows to create matrice
 
+#FACTORS
+fac1 <- factor(c("yes", "yes", "no", "yes", "no", "yes"), 
+               levels=c("yes", "no")) #creating factor
+table(fac1) #show the levels of factor as table
+unclass(fac1) #outputs yes as 2 no as 1 and shows the attributes also levels
+
+#MISSING VALUES
+missingv <- c(1, 0, 1, NA, 4, NaN)
+is.na(missingv) #checking missing values NA is not NaN. but NaN is NA
+is.nan(missingv)
+
+#DATA FRAMES
+df1 <- data.frame(ID = 1:5, Name=c("Fakhri", "Adil", "Zaman", 
+                                   "Samir", "Mirza"))
+#creating example data frame 
+
+#NAMES
+nm <- 1:3
+names(nm) <- c("bir", "iki", "uc") #assign name for each number
+ln <- list(a = 1, b = 2, c = 3) #named list
+mt2 <-matrix(1:6, nrow=2, ncol=3)
+dimnames(mt2) <- list(c("a", "b"), c("c", "d", "e")) #giving names to rows and cols of mt matrice
+
+
