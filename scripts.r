@@ -72,5 +72,9 @@ info <- c("age", "bmi", "height", "weight")
 
 arr1<- array(c(m1, m2), dim = c(3,4,2), dimnames=list(names, info))
 
+#IMPORTING EXCEL(CSV) FILE INTO R
+library(readr)
+excelData <- read_csv("exam.csv")
+View(excelData)
 
 
