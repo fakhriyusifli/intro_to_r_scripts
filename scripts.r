@@ -57,4 +57,17 @@ ln <- list(a = 1, b = 2, c = 3) #named list
 mt2 <-matrix(1:6, nrow=2, ncol=3)
 dimnames(mt2) <- list(c("a", "b"), c("c", "d", "e")) #giving names to rows and cols of mt matrice
 
+#example data frame
+df2 <- data.frame(name = c("Telman", "Adil", "Mirze", "Sabina"),
+surname = c("Hamidov", "Mirzayev", "Nazarbayov", "Aliyeva"))
+
+
+#ARRAY
+v1 <- 1:12
+m1 <- matrix(v1, nrow = 3, ncol = 4, byrow = TRUE)
+v2 <- 13:24
+m2 <- matrix(v2, nrow = 3, ncol = 4, byrow = TRUE)
+arr1<- array(c(m1, m2), dim = c(3,4,2))
+
+
 
