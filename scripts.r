@@ -67,7 +67,10 @@ v1 <- 1:12
 m1 <- matrix(v1, nrow = 3, ncol = 4, byrow = TRUE)
 v2 <- 13:24
 m2 <- matrix(v2, nrow = 3, ncol = 4, byrow = TRUE)
-arr1<- array(c(m1, m2), dim = c(3,4,2))
+names <- c("Telman", "Mirza", "Adil")
+info <- c("age", "bmi", "height", "weight")
+
+arr1<- array(c(m1, m2), dim = c(3,4,2), dimnames=list(names, info))
 
 
 
